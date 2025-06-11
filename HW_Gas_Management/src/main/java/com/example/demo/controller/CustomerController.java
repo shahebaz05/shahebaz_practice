@@ -19,6 +19,13 @@ public class CustomerController {
 	@Autowired
 	CustomerService customerService;
 
+	
+	@GetMapping("Sample")
+	public String get()
+	{
+		return "Testing ";
+	}
+	
 	@PostMapping("customer")
 	public String addCustomer(@RequestBody Customer customer) {
 		return customerService.saveCustomer(customer);
