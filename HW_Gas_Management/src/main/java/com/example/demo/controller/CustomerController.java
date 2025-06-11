@@ -25,6 +25,11 @@ public class CustomerController {
 	{
 		return "Testing ";
 	}
+	@GetMapping("Sample2")
+	public String getMessage()
+	{
+		return "Testing2 ";
+	}
 	
 	@PostMapping("customer")
 	public String addCustomer(@RequestBody Customer customer) {
